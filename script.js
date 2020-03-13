@@ -87,8 +87,8 @@ function writePassword() {
     for (i=0; i < userLengthChoice; i++) {
       //  pick a function from usersDesiredFunctions -- want it to be random
       var randomNumber = Math.floor(Math.random()*4);
-      var functionToUse = usersDesiredFunctions[randomNumber];  // () => string
-      finalPassword += functionToUse(); 
+      var valueToUse = usersDesiredFunctions[randomNumber];  // () => string
+      finalPassword += valueToUse(); 
     }
     
    return finalPassword;
