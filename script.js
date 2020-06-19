@@ -26,25 +26,25 @@ function writePassword() {
   return userLengthChoice;
  }
 
- function getUsersDesiredFunctions () {  // [] of function
+ function getUsersDesiredFunctions () { 
 
   // find out if use wants lowercase letters  -- output boolean
-  var desiredLowerCase = confirm ("Do you want your password to include lowercase letters?")
+  const desiredLowerCase = confirm ("Do you want your password to include lowercase letters?")
   if (desiredLowerCase !== true){
     alert("Your password will not contain lower case letters");
   }
   // find out if use wants upperCase letters 
-  var desiredUpperCase = confirm ("Do you want your password to include uppercase letters?")
+  const desiredUpperCase = confirm ("Do you want your password to include uppercase letters?")
   if (desiredUpperCase !== true){
     alert("Your password will not contain UPPER CASE LETTERS");
   }
   // find out if use wants numbers  
-  var desiredNumbers = confirm ("Do you want your password to include numbers Numbers?")
+  const desiredNumbers = confirm ("Do you want your password to include numbers Numbers?")
   if (desiredNumbers !== true){
     alert("Your password will not contain any numbers");
   }
   // find out if use wants symbols  letters
-  var desiredSpecialCharacters = confirm ("Do you want your password to include special characters letters?")
+  const desiredSpecialCharacters = confirm ("Do you want your password to include special characters letters?")
   if(desiredSpecialCharacters !== true){
     alert("Your password will not include symbols");
   }
