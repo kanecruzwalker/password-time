@@ -6,16 +6,14 @@ generateBtn.addEventListener("click", writePassword);
 
 // Write password to the #password input
 function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+  const password = generatePassword();
+  const passwordText = document.querySelector("#password");
 
   passwordText.value = password;
 }
 
 // TODO: Write code so the generatePassword returns a string for a password
 // which meets the requirements in the instructions.
-
-
  function getLengthOfPassword() { // () => boolean
    var userLengthChoice = prompt("How many characters do you wish to include in your password");
    
