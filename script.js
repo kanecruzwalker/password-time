@@ -51,7 +51,7 @@ function writePassword() {
 
   
   // make array of functions to use // Array<() => string> //functionsToUse[0]()  --> 
-  var usersDesiredFunctions = [];
+  let usersDesiredFunctions = [];
   if (desiredLowerCase){
     usersDesiredFunctions.push(getRandomLower);
   }
