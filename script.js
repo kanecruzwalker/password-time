@@ -1,7 +1,6 @@
-// Assignment Code
-var generateBtn = document.querySelector("#generate");
-
-// Add event listener to generate button
+// select html elements
+// give it an event listener
+const generateBtn = document.querySelector("#generate");
 generateBtn.addEventListener("click", writePassword);
 
 
