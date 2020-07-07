@@ -8,12 +8,10 @@ generateBtn.addEventListener("click", writePassword);
 function writePassword() {
   const password = generatePassword();
   const passwordText = document.querySelector("#password");
-
   passwordText.value = password;
 }
 
 function getLengthOfPassword() {
-  // () => boolean
   let userLengthChoice = prompt(
     "How many characters do you wish to include in your password"
   );
@@ -109,41 +107,3 @@ function getRandomSymbol() {
   var symbols = "!@#$%^&*()_+{}|:<>?/.,;][=-";
   return symbols[Math.floor(Math.random() * symbols.length)];
 }
-
-//------------------Brainstorming bellow
-//WHEN I click the button to generate a password
-//generateBtn.addEventListener ('click)
-//THEN I am presented with a series of prompts for password criteria
-//then discoverUserChoices ["desiredLength" + "desireNumbers" + "desireSymbols" + "desireUpper" + "desireLower"]
-// ""
-//WHEN prompted for password criteria
-// var = desiredLowerCase confirm ("Do you want your password to include lowercase letters?")
-// var = desiredUpperCase confirm ("Do you want your password to include uppercase letters?")
-// var = desiredNumbers confirm ("Do you want your password to include numbers letters?")
-// var = desiredSpecialCharacters confirm ("Do you want your password to include special characters  letters?")
-// var = desiredLength prompt("How many passwords characters in password ")
-//THEN I select which criteria to include in the password
-//  desiredLowerCase, desiredUpperCase, desiredNumbers, desiredSpecialCharacters are all confirm
-//  above list should be object, discoverUserChoices
-//  if confirm's === true, include in passwordGeneration
-//  if confirms !== true, do not include in password generation
-//WHEN prompted for character types to include in the password
-//desiredCharacterTypes [length, lowercase, uppercase, numeric, special characters]
-//THEN I choose lowercase, uppercase, numeric, and/or special characters
-//Then values are validadted/logged to be used in final generation
-
-//WHEN I answer each prompt
-//desiredCharacterTypes inputs
-//THEN my input should be validated and at least one character type should be selected
-//require 1 input type to be selected true
-
-//WHEN all prompts are answered
-//when desiredCharacterTypes / desiredUsersInput complete
-//THEN a password is generated that matches the selected criteria
-//then generatePassword using values from desiredCharacterTypes/ desiredUsersInput
-// to instruct generatePassword as of to what values to use
-
-//WHEN the password is generated
-//when password === made
-//THEN the password is either displayed in an alert or written to the page
-//alert passwordMade  &or write password on the page
